@@ -53,6 +53,6 @@ func viewController(at index: Int) -> IntroPageViewController? {
             return nil
   }
 }
-
+```
 
 Of course you can also use a custom view controller for the pages. Just extend IntroPageViewController. But you have to give it a clear background, so that the colours are visible.
