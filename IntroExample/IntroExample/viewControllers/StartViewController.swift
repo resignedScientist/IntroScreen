@@ -43,7 +43,7 @@ extension StartViewController: IntroDataSource {
                 hue: 30/360,
                 title: "First page",
                 subtitle: "This is the first page.",
-                image: nil
+                image: UIImage(named: "first")
             )
         case 1:
             return DefaultIntroPageViewController.getInstance(
@@ -51,7 +51,7 @@ extension StartViewController: IntroDataSource {
                 hue: 60/360,
                 title: "Second page",
                 subtitle: "This is the second page.",
-                image: nil
+                image: UIImage(named: "second")
             )
         case 2:
             return DefaultIntroPageViewController.getInstance(
@@ -59,7 +59,7 @@ extension StartViewController: IntroDataSource {
                 hue: 90/360,
                 title: "Third page",
                 subtitle: "This is the third page.",
-                image: nil
+                image: UIImage(named: "third")
             )
         default:
             return nil

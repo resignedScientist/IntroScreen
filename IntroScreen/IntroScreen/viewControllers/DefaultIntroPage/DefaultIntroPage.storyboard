@@ -27,7 +27,7 @@
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-cL-DSu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-cL-DSu">
                                 <rect key="frame" x="16" y="60" width="343" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Cdv-lw-Y29">
