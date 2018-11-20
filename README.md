@@ -61,6 +61,8 @@ func viewController(at index: Int) -> IntroPageViewController? {
 }
 ```
 
+### Customization
+
 Of course you can also use a custom view controller for the pages. Just extend IntroPageViewController. But you have to give it a clear background, so that the colours are visible.
 
 The colours use the HSV color model. So, you just provide the hue in your Intro Pages.
@@ -69,6 +71,13 @@ You can change the saturation & brightness in the IntroViewController for all pa
 ```swift
 introViewController.saturation = 0.85
 introViewController.brightness = 0.9
+```
+
+If you want to navigate the pages programmatically (for example if you want to add buttons for this), you can use these methods:
+
+```swift
+introViewController.nextPage() // navigate forward
+introViewController.previousPage() // navigate back
 ```
 
 ## Example
