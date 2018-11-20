@@ -171,7 +171,7 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     public func previousPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerBefore: currentVC) as? IntroPageViewController else { return }
-        setViewControllers([nextVC], direction: .forward, animated: true)
+        setViewControllers([nextVC], direction: .reverse, animated: true)
         pageControl?.currentPage = nextVC.index
     }
 }
