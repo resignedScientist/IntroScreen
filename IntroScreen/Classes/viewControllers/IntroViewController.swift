@@ -16,6 +16,14 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     private var targetColor: CGFloat?
     private var currentVC: IntroPageViewController?
     private var targetVC: IntroPageViewController?
+    private var pageControl: UIPageControl? {
+        for view in view.subviews {
+            if view is UIPageControl {
+                return view as? UIPageControl
+            }
+        }
+        return nil
+    }
     
     required public init?(coder: NSCoder) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
@@ -149,6 +157,22 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
         let width = view.frame.width
         let progressPixels = pixels - width
         return abs(progressPixels / width)
+    }
+    
+    // MARK: - Moving pages
+    
+    public func nextPage() {
+        guard let currentVC = currentVC else { return }
+        guard let nextVC = pageViewController(self, viewControllerAfter: currentVC) as? IntroPageViewController else { return }
+        setViewControllers([nextVC], direction: .forward, animated: true)
+        pageControl?.currentPage = nextVC.index
+    }
+    
+    public func previousPage() {
+        guard let currentVC = currentVC else { return }
+        guard let nextVC = pageViewController(self, viewControllerBefore: currentVC) as? IntroPageViewController else { return }
+        setViewControllers([nextVC], direction: .forward, animated: true)
+        pageControl?.currentPage = nextVC.index
     }
 }
 
