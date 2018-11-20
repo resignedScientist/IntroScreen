@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h7y-vS-cY7">
-    <device id="ipad10_5" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="DefaultIntroPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h7y-vS-cY7" customClass="DefaultIntroPageViewController" customModule="IntroScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ek4-c5-RXK">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-cL-DSu">
-                                <rect key="frame" x="16" y="36" width="802" height="685"/>
+                                <rect key="frame" x="16" y="60" width="382" height="564"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="03p-ew-PCK">
                                         <variation key="heightClass=compact" constant="280"/>
@@ -37,7 +37,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcx-sN-q3e">
-                                <rect key="frame" x="16" y="819" width="802" height="20.5"/>
+                                <rect key="frame" x="16" y="688" width="382" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +46,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLC-x0-F2S">
-                                <rect key="frame" x="16" y="781" width="802" height="30"/>
+                                <rect key="frame" x="16" y="656" width="382" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                             <constraint firstItem="EsY-NS-tgw" firstAttribute="trailing" secondItem="c0b-cL-DSu" secondAttribute="trailing" constant="16" id="81m-HG-fCe"/>
                             <constraint firstItem="Pcx-sN-q3e" firstAttribute="top" secondItem="xLC-x0-F2S" secondAttribute="bottom" constant="8" id="F8f-Ab-NJ3"/>
                             <constraint firstItem="c0b-cL-DSu" firstAttribute="top" secondItem="EsY-NS-tgw" secondAttribute="top" constant="16" id="Gba-sO-6Po"/>
-                            <constraint firstItem="xLC-x0-F2S" firstAttribute="centerY" secondItem="ek4-c5-RXK" secondAttribute="centerY" constant="240" id="HNM-8E-SlU">
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="centerY" secondItem="ek4-c5-RXK" secondAttribute="centerY" constant="220" id="HNM-8E-SlU">
                                 <variation key="heightClass=compact" constant="-40"/>
                             </constraint>
                             <constraint firstItem="EsY-NS-tgw" firstAttribute="trailing" secondItem="c0b-cL-DSu" secondAttribute="trailing" constant="16" id="VRF-dU-0fo"/>
@@ -70,7 +70,7 @@
                             <constraint firstItem="xLC-x0-F2S" firstAttribute="top" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="16" id="b7V-Jx-PHt"/>
                             <constraint firstItem="xLC-x0-F2S" firstAttribute="trailing" secondItem="Pcx-sN-q3e" secondAttribute="trailing" id="e7x-8d-hld"/>
                             <constraint firstItem="EsY-NS-tgw" firstAttribute="bottom" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="16" id="eRG-Xt-YQ0"/>
-                            <constraint firstItem="xLC-x0-F2S" firstAttribute="top" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="16" id="jzB-S7-Kov">
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="top" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="32" id="jzB-S7-Kov">
                                 <variation key="heightClass=regular-widthClass=regular" constant="60"/>
                             </constraint>
                             <constraint firstItem="EsY-NS-tgw" firstAttribute="trailing" secondItem="xLC-x0-F2S" secondAttribute="trailing" constant="16" id="t65-YI-vtk"/>

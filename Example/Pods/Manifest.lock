@@ -1,5 +1,5 @@
 PODS:
-  - IntroScreen (1.0.3)
+  - IntroScreen (1.0.4)
 
 DEPENDENCIES:
   - IntroScreen (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IntroScreen: ab8dfc7f611025d866ffe4f2bef59273032aaadc
+  IntroScreen: 1166671366418fd3548e51b6c7f83c85e8a60a2c
 
 PODFILE CHECKSUM: e56d9367874d8d97bfe3fb1cf7dce91311fdc708
 
