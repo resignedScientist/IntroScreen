@@ -9,9 +9,20 @@ How to use:
 
 2. Add a segue to this ViewController
 
-3. Configure the ViewController in prepareForSegue() like this:
+3. Set the introDataSource to the IntroViewController in prepareForSegue()
+
+3. Configure the ViewController in your data source like this:
 
 ```swift
+var numberOfPages: Int {
+  return 3
+}
+
+// Return true, if you want to fade out the last page colour into black.
+var fadeOutLastPage: Bool {
+  return false
+}
+
 func viewController(at index: Int) -> IntroPageViewController? {
   switch index {
     case 0:
