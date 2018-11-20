@@ -63,6 +63,14 @@ func viewController(at index: Int) -> IntroPageViewController? {
 
 Of course you can also use a custom view controller for the pages. Just extend IntroPageViewController. But you have to give it a clear background, so that the colours are visible.
 
+The colours use the HSV color model. So, you just provide the hue in your Intro Pages.
+You can change the saturation & brightness in the IntroViewController for all pages at the same time:
+
+```swift
+introViewController.saturation = 0.85
+introViewController.brightness = 0.9
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
