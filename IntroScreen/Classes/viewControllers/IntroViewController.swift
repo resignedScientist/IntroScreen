@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class IntroViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, UIScrollViewDelegate {
+open class IntroViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, UIScrollViewDelegate {
     public var introDataSource: IntroDataSource?
     public var saturation: CGFloat = 0.85
     public var brightness: CGFloat = 0.9
