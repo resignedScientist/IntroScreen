@@ -1,8 +1,8 @@
 {
   "name": "IntroScreen",
-  "version": "0.1.0",
-  "summary": "A short description of IntroScreen.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.0.3",
+  "summary": "A beautiful intro screen for iOS written in Swift.",
+  "description": "This pod is an Intro Screen for iOS for discribing beautifully what the app you are building does. It uses color shifting between each intro page and is highly customizable. You can use the default intro page with image, title & subtitle or can use your own intro page.",
   "homepage": "https://github.com/P1xelfehler/IntroScreen",
   "license": {
     "type": "MIT",
@@ -13,10 +13,11 @@
   },
   "source": {
     "git": "https://github.com/P1xelfehler/IntroScreen.git",
-    "tag": "0.1.0"
+    "tag": "1.0.3"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "11.0"
   },
+  "swift_version": "4.2",
   "source_files": "IntroScreen/Classes/**/*"
 }

@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0771669AE5C9AC935520B6D085BB4A /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D79C723366D33E01A52BB0824DB31AD /* IntroPageViewController.swift */; };
+		2A81A6B9DDC3ABC3FE1E40839C24BDB3 /* DefaultIntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A42AFEFA00A9687C039F0D6991CA70 /* DefaultIntroPageViewController.swift */; };
 		457BE46249EE76734E56D8D740364905 /* Pods-IntroScreen_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3C3C9400BE8CAA78F33F2A54C6D833A /* Pods-IntroScreen_Example-dummy.m */; };
 		572557196FD148B25B5E42E0C8F7D0FE /* Pods-IntroScreen_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF9A3D52B7F75EE17AC2CB76CC3338CD /* Pods-IntroScreen_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5DEB2FB976E214AF175B79981027C705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		69F3334B359653F9AEDAF9BDB2C0322C /* IntroScreen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FAD52CFF489F38A8C7B88DEC42CB8C2 /* IntroScreen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B5EE5021FD57F99C8138B2919BE76D1 /* IntroScreen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67013CE6E145EE3104DD1F5A406110A /* IntroScreen-dummy.m */; };
+		698CA3C689C2A47828CD38AD22CD28D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		6ECFD394ABDFE4F430A65993E5AE7FDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		88315EAE078EFC67E5FE6CA37AE55BAB /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F215D7DA7366AFC591906368FA4D62 /* IntroViewController.swift */; };
+		8EE6629279FDAD1CD811DB391E81D712 /* IntroScreen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D5FE496BE4ECC21FA506CDC3B34CDF8 /* IntroScreen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8FCC0196278654A26F89DE65229E2EFE /* Pods-IntroScreen_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 428826E194AF92DCD3217223D6198855 /* Pods-IntroScreen_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D7103A49052FC027BA18454D3547762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		AD92EC577652BAD299D06B52782C0901 /* Pods-IntroScreen_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 487701F0620076E27B5049C680D61598 /* Pods-IntroScreen_Tests-dummy.m */; };
-		D0ED1EC421A4163B009A2EB3 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EBE21A4163B009A2EB3 /* IntroViewController.swift */; };
-		D0ED1EC521A4163B009A2EB3 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EBF21A4163B009A2EB3 /* IntroPageViewController.swift */; };
-		D0ED1EC621A4163B009A2EB3 /* DefaultIntroPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0ED1EC121A4163B009A2EB3 /* DefaultIntroPage.storyboard */; };
-		D0ED1EC721A4163B009A2EB3 /* DefaultIntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EC221A4163B009A2EB3 /* DefaultIntroPageViewController.swift */; };
+		AFADBB23249966A80A0B1C914F640DC1 /* IntroScreen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A7FB6CDC85BF0D52CE27F828384681 /* IntroScreen-dummy.m */; };
+		C7FF299F3EDD028863CFC81E34E7E22B /* DefaultIntroPage.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 4431D63F977105218D914AD865DA936B /* DefaultIntroPage.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +27,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 82A9B56175018F9B2C608CC372F0CF7A;
+			remoteGlobalIDString = 0AB3FFEA227492C82E1724456F36238D;
 			remoteInfo = IntroScreen;
 		};
 		A69EA8E4E66C906DAB645DE6ECFBF347 /* PBXContainerItemProxy */ = {
@@ -40,44 +40,44 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0650419D98B52AC85C196240F0A149F2 /* Pods_IntroScreen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntroScreen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A2980DBA8B6C79D8C2E95ACBDF0B22A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0650419D98B52AC85C196240F0A149F2 /* Pods_IntroScreen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IntroScreen_Tests.framework; path = "Pods-IntroScreen_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C967F9D59C850254B973A86D3A58034 /* IntroScreen.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = IntroScreen.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0D79C723366D33E01A52BB0824DB31AD /* IntroPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntroPageViewController.swift; path = IntroScreen/Classes/viewControllers/IntroPageViewController.swift; sourceTree = "<group>"; };
+		16A7FB6CDC85BF0D52CE27F828384681 /* IntroScreen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IntroScreen-dummy.m"; sourceTree = "<group>"; };
+		2920BB76AFF253881587497DC1AC751D /* IntroScreen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IntroScreen-prefix.pch"; sourceTree = "<group>"; };
 		33750239597AC12DE05C33912CA5C5A3 /* Pods-IntroScreen_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IntroScreen_Example-resources.sh"; sourceTree = "<group>"; };
 		3A7AF80E6A44FCFCF0FE189280019B3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D5FE496BE4ECC21FA506CDC3B34CDF8 /* IntroScreen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IntroScreen-umbrella.h"; sourceTree = "<group>"; };
 		3F34678E4293451E20AF0D905112A3ED /* Pods-IntroScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IntroScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
 		428826E194AF92DCD3217223D6198855 /* Pods-IntroScreen_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IntroScreen_Example-umbrella.h"; sourceTree = "<group>"; };
+		4431D63F977105218D914AD865DA936B /* DefaultIntroPage.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = DefaultIntroPage.storyboard; sourceTree = "<group>"; };
 		487701F0620076E27B5049C680D61598 /* Pods-IntroScreen_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IntroScreen_Tests-dummy.m"; sourceTree = "<group>"; };
 		541E054565CD133D1A793F28A4B3BE5A /* Pods-IntroScreen_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IntroScreen_Tests.modulemap"; sourceTree = "<group>"; };
-		56CBE7A1175F514353FFB70D929F0776 /* IntroScreen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IntroScreen.modulemap; sourceTree = "<group>"; };
+		59F215D7DA7366AFC591906368FA4D62 /* IntroViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntroViewController.swift; path = IntroScreen/Classes/viewControllers/IntroViewController.swift; sourceTree = "<group>"; };
 		5B6CD754A6E47F9A0100A4778D2C58EF /* Pods-IntroScreen_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IntroScreen_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5B90B1CA3E69BBA02BCCFABABE6BF76E /* Pods-IntroScreen_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IntroScreen_Tests-resources.sh"; sourceTree = "<group>"; };
 		5C59FD9F62DEE017D199E602C7EBE1CB /* Pods-IntroScreen_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IntroScreen_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5E1A3A262775E244E0F956A203C4AD74 /* Pods-IntroScreen_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IntroScreen_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6FAD52CFF489F38A8C7B88DEC42CB8C2 /* IntroScreen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IntroScreen-umbrella.h"; sourceTree = "<group>"; };
+		697B532A50A1182A68F64AC7581FD759 /* IntroScreen.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IntroScreen.xcconfig; sourceTree = "<group>"; };
+		724246036AF67BC9F994F97E45A2D7D5 /* IntroScreen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IntroScreen.modulemap; sourceTree = "<group>"; };
 		737468CC69F05FD010CD23C38B7C6B73 /* Pods-IntroScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IntroScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7812C2590CE4CBA936F0113C8812E922 /* Pods-IntroScreen_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IntroScreen_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		7EA9C987644F959D8A8920B7763466BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89CDC98FEB082D3A9C820F6CDA14127D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		96653ACA5B7435E1FB7023C39C286222 /* Pods-IntroScreen_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IntroScreen_Example.modulemap"; sourceTree = "<group>"; };
-		9D4D078732FAA33608D4ED926409DB74 /* Pods_IntroScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntroScreen_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4D078732FAA33608D4ED926409DB74 /* Pods_IntroScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IntroScreen_Example.framework; path = "Pods-IntroScreen_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A609FF0D2A52B86F991D780A0F42E6E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5391E4C38B6687F7D12C297F1AC4B83 /* Pods-IntroScreen_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IntroScreen_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BB5B07430F33C3A3C728695FB058116D /* IntroScreen.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = IntroScreen.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C3B369DDEF8A8EBBA795E546E28CE285 /* IntroScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IntroScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C67013CE6E145EE3104DD1F5A406110A /* IntroScreen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IntroScreen-dummy.m"; sourceTree = "<group>"; };
-		CD14EE63EC8703EE504FAC2786415227 /* IntroScreen.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IntroScreen.xcconfig; sourceTree = "<group>"; };
-		D0ED1EBE21A4163B009A2EB3 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		D0ED1EBF21A4163B009A2EB3 /* IntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
-		D0ED1EC121A4163B009A2EB3 /* DefaultIntroPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DefaultIntroPage.storyboard; sourceTree = "<group>"; };
-		D0ED1EC221A4163B009A2EB3 /* DefaultIntroPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultIntroPageViewController.swift; sourceTree = "<group>"; };
+		C16BA42A8ECE197EEB531C730C502105 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C3B369DDEF8A8EBBA795E546E28CE285 /* IntroScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IntroScreen.framework; path = IntroScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4382AA60E71AB6CF96ECFC9ABA6345A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DACFFFACFA7D4499421D607E0A215A06 /* Pods-IntroScreen_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IntroScreen_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF3160F5F61E7E4F8A1C9F790ACCC5AD /* IntroScreen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IntroScreen-prefix.pch"; sourceTree = "<group>"; };
 		E3C3C9400BE8CAA78F33F2A54C6D833A /* Pods-IntroScreen_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IntroScreen_Example-dummy.m"; sourceTree = "<group>"; };
 		E4FDAA6FB37221D356EF1DD0DCBCBD89 /* Pods-IntroScreen_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IntroScreen_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EF9A3D52B7F75EE17AC2CB76CC3338CD /* Pods-IntroScreen_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IntroScreen_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F4A42AFEFA00A9687C039F0D6991CA70 /* DefaultIntroPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultIntroPageViewController.swift; sourceTree = "<group>"; };
 		FCCCE33C36A1F26F87148F97E33E11A3 /* Pods-IntroScreen_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IntroScreen_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FD86BD98061B2F272943615B522A5A9F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B0E88A26CBF7B70EAC854502DE6E275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				698CA3C689C2A47828CD38AD22CD28D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AFB2B661A3911CA1D318CC7F59DE8A69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,17 +105,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAB36FFAD81C0017EA804ED859B3A65C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5DEB2FB976E214AF175B79981027C705 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11941E87E56EB5F1BF1632ABBC2F57E0 /* DefaultIntroPage */ = {
+			isa = PBXGroup;
+			children = (
+				4431D63F977105218D914AD865DA936B /* DefaultIntroPage.storyboard */,
+				F4A42AFEFA00A9687C039F0D6991CA70 /* DefaultIntroPageViewController.swift */,
+			);
+			name = DefaultIntroPage;
+			path = IntroScreen/Classes/viewControllers/DefaultIntroPage;
+			sourceTree = "<group>";
+		};
+		166D063A4E1DDAA47E43619F856EDD16 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADB64130E8E426AC9F1C2CA7A259A859 /* IntroScreen */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		250AAF14565626B9588D902E0FAD0D14 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +133,16 @@
 				54E95AA5583BE8E53AB44C1706D27A7B /* Pods-IntroScreen_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25F2E5F104AE912B98F5236D14224F67 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0C967F9D59C850254B973A86D3A58034 /* IntroScreen.podspec */,
+				C16BA42A8ECE197EEB531C730C502105 /* LICENSE */,
+				89CDC98FEB082D3A9C820F6CDA14127D /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		34B57BBB7442B18C463AE46247AB641F /* Products */ = {
@@ -157,11 +185,25 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DB2B66CCE5BC225FEAB780F148F62279 /* Development Pods */,
+				166D063A4E1DDAA47E43619F856EDD16 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				34B57BBB7442B18C463AE46247AB641F /* Products */,
 				250AAF14565626B9588D902E0FAD0D14 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		A876FA880A75E204A3740398466A2E53 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4382AA60E71AB6CF96ECFC9ABA6345A /* Info.plist */,
+				724246036AF67BC9F994F97E45A2D7D5 /* IntroScreen.modulemap */,
+				697B532A50A1182A68F64AC7581FD759 /* IntroScreen.xcconfig */,
+				16A7FB6CDC85BF0D52CE27F828384681 /* IntroScreen-dummy.m */,
+				2920BB76AFF253881587497DC1AC751D /* IntroScreen-prefix.pch */,
+				3D5FE496BE4ECC21FA506CDC3B34CDF8 /* IntroScreen-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IntroScreen";
 			sourceTree = "<group>";
 		};
 		AA30C08892B29425600187CA7306649F /* Pods-IntroScreen_Example */ = {
@@ -182,83 +224,25 @@
 			path = "Target Support Files/Pods-IntroScreen_Example";
 			sourceTree = "<group>";
 		};
+		ADB64130E8E426AC9F1C2CA7A259A859 /* IntroScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0D79C723366D33E01A52BB0824DB31AD /* IntroPageViewController.swift */,
+				59F215D7DA7366AFC591906368FA4D62 /* IntroViewController.swift */,
+				11941E87E56EB5F1BF1632ABBC2F57E0 /* DefaultIntroPage */,
+				25F2E5F104AE912B98F5236D14224F67 /* Pod */,
+				A876FA880A75E204A3740398466A2E53 /* Support Files */,
+			);
+			name = IntroScreen;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C592A416E1CB6197E1B45A9FE7829392 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				BB5B07430F33C3A3C728695FB058116D /* IntroScreen.podspec */,
-				7EA9C987644F959D8A8920B7763466BB /* LICENSE */,
-				FD86BD98061B2F272943615B522A5A9F /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		D0ED1EBB21A4163A009A2EB3 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D0ED1EBD21A4163B009A2EB3 /* viewControllers */,
-			);
-			name = Classes;
-			path = IntroScreen/Classes;
-			sourceTree = "<group>";
-		};
-		D0ED1EBD21A4163B009A2EB3 /* viewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				D0ED1EC021A4163B009A2EB3 /* DefaultIntroPage */,
-				D0ED1EBE21A4163B009A2EB3 /* IntroViewController.swift */,
-				D0ED1EBF21A4163B009A2EB3 /* IntroPageViewController.swift */,
-			);
-			path = viewControllers;
-			sourceTree = "<group>";
-		};
-		D0ED1EC021A4163B009A2EB3 /* DefaultIntroPage */ = {
-			isa = PBXGroup;
-			children = (
-				D0ED1EC121A4163B009A2EB3 /* DefaultIntroPage.storyboard */,
-				D0ED1EC221A4163B009A2EB3 /* DefaultIntroPageViewController.swift */,
-			);
-			path = DefaultIntroPage;
-			sourceTree = "<group>";
-		};
-		D38742EA1EDAA74314C0C1B8AD746F2A /* IntroScreen */ = {
-			isa = PBXGroup;
-			children = (
-				D0ED1EBB21A4163A009A2EB3 /* Classes */,
-				C592A416E1CB6197E1B45A9FE7829392 /* Pod */,
-				F97EB23B85505628F4E38181ACDE4AF6 /* Support Files */,
-			);
-			name = IntroScreen;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		DB2B66CCE5BC225FEAB780F148F62279 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D38742EA1EDAA74314C0C1B8AD746F2A /* IntroScreen */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		F97EB23B85505628F4E38181ACDE4AF6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1A2980DBA8B6C79D8C2E95ACBDF0B22A /* Info.plist */,
-				56CBE7A1175F514353FFB70D929F0776 /* IntroScreen.modulemap */,
-				CD14EE63EC8703EE504FAC2786415227 /* IntroScreen.xcconfig */,
-				C67013CE6E145EE3104DD1F5A406110A /* IntroScreen-dummy.m */,
-				DF3160F5F61E7E4F8A1C9F790ACCC5AD /* IntroScreen-prefix.pch */,
-				6FAD52CFF489F38A8C7B88DEC42CB8C2 /* IntroScreen-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/IntroScreen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +256,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40224C327A8791B62500E53794B0DC9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE6629279FDAD1CD811DB391E81D712 /* IntroScreen-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		64664F78AEDF36C8990FA61F44B9F259 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,17 +272,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7325155725F45AD1889C6459598B76D7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				69F3334B359653F9AEDAF9BDB2C0322C /* IntroScreen-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0AB3FFEA227492C82E1724456F36238D /* IntroScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E42D15C8E28B0C37D1A8F6CF560B9C4 /* Build configuration list for PBXNativeTarget "IntroScreen" */;
+			buildPhases = (
+				40224C327A8791B62500E53794B0DC9E /* Headers */,
+				C901C71220E8C5B8A2CA19E55358EED5 /* Sources */,
+				5B0E88A26CBF7B70EAC854502DE6E275 /* Frameworks */,
+				2D44B4E867395AEBD3D158FC4B3D9EC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntroScreen;
+			productName = IntroScreen;
+			productReference = C3B369DDEF8A8EBBA795E546E28CE285 /* IntroScreen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		23895D514996C06DD0879BB4F85FFB0E /* Pods-IntroScreen_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 62B04D70C42CE9F242C4D4AE0C1A3310 /* Build configuration list for PBXNativeTarget "Pods-IntroScreen_Tests" */;
@@ -308,24 +310,6 @@
 			name = "Pods-IntroScreen_Tests";
 			productName = "Pods-IntroScreen_Tests";
 			productReference = 0650419D98B52AC85C196240F0A149F2 /* Pods_IntroScreen_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		82A9B56175018F9B2C608CC372F0CF7A /* IntroScreen */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFF5F68E204DD55F57A1060066318CF4 /* Build configuration list for PBXNativeTarget "IntroScreen" */;
-			buildPhases = (
-				7325155725F45AD1889C6459598B76D7 /* Headers */,
-				CD2477B57CC1E54D9B2E52287C218EFB /* Sources */,
-				FAB36FFAD81C0017EA804ED859B3A65C /* Frameworks */,
-				EC185D832F35973098BDFA77850B2AED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IntroScreen;
-			productName = IntroScreen;
-			productReference = C3B369DDEF8A8EBBA795E546E28CE285 /* IntroScreen.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B0B012C4B65C8FA1F590526254470FEE /* Pods-IntroScreen_Example */ = {
@@ -355,11 +339,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				TargetAttributes = {
-					82A9B56175018F9B2C608CC372F0CF7A = {
-						LastSwiftMigration = 1010;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -373,7 +352,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				82A9B56175018F9B2C608CC372F0CF7A /* IntroScreen */,
+				0AB3FFEA227492C82E1724456F36238D /* IntroScreen */,
 				B0B012C4B65C8FA1F590526254470FEE /* Pods-IntroScreen_Example */,
 				23895D514996C06DD0879BB4F85FFB0E /* Pods-IntroScreen_Tests */,
 			);
@@ -381,6 +360,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2D44B4E867395AEBD3D158FC4B3D9EC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D11D0A36194CE1ADB935FCB18914A44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,14 +378,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC185D832F35973098BDFA77850B2AED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0ED1EC621A4163B009A2EB3 /* DefaultIntroPage.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,14 +400,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD2477B57CC1E54D9B2E52287C218EFB /* Sources */ = {
+		C901C71220E8C5B8A2CA19E55358EED5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0ED1EC721A4163B009A2EB3 /* DefaultIntroPageViewController.swift in Sources */,
-				6B5EE5021FD57F99C8138B2919BE76D1 /* IntroScreen-dummy.m in Sources */,
-				D0ED1EC521A4163B009A2EB3 /* IntroPageViewController.swift in Sources */,
-				D0ED1EC421A4163B009A2EB3 /* IntroViewController.swift in Sources */,
+				C7FF299F3EDD028863CFC81E34E7E22B /* DefaultIntroPage.storyboard in Sources */,
+				2A81A6B9DDC3ABC3FE1E40839C24BDB3 /* DefaultIntroPageViewController.swift in Sources */,
+				1E0771669AE5C9AC935520B6D085BB4A /* IntroPageViewController.swift in Sources */,
+				AFADBB23249966A80A0B1C914F640DC1 /* IntroScreen-dummy.m in Sources */,
+				88315EAE078EFC67E5FE6CA37AE55BAB /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,17 +424,18 @@
 		FB80FC48C1A4669A88D6CF24C6721A76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IntroScreen;
-			target = 82A9B56175018F9B2C608CC372F0CF7A /* IntroScreen */;
+			target = 0AB3FFEA227492C82E1724456F36238D /* IntroScreen */;
 			targetProxy = 7CB9F860006263417B859D56DC46D058 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1C275E9D4B38DDC590F0DBDD264DCA1B /* Release */ = {
+		01A43166A5AC407F25F430984B857FC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FCCCE33C36A1F26F87148F97E33E11A3 /* Pods-IntroScreen_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -467,7 +447,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-IntroScreen_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-IntroScreen_Tests/Pods-IntroScreen_Tests.modulemap";
@@ -485,11 +465,44 @@
 			};
 			name = Release;
 		};
-		40D65BED104C8F8FC705BCA12D75B120 /* Debug */ = {
+		6B1B15E58336050349D182AC7F99905B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697B532A50A1182A68F64AC7581FD759 /* IntroScreen.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IntroScreen/IntroScreen-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IntroScreen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IntroScreen/IntroScreen.modulemap";
+				PRODUCT_MODULE_NAME = IntroScreen;
+				PRODUCT_NAME = IntroScreen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		81F04B28B0DB63217F1DDB62D5EA07E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 737468CC69F05FD010CD23C38B7C6B73 /* Pods-IntroScreen_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -501,7 +514,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-IntroScreen_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example.modulemap";
@@ -518,7 +531,171 @@
 			};
 			name = Debug;
 		};
-		50646285DD9FD95AF390BDA3FB1948EA /* Debug */ = {
+		8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BDCFCF62800BD333E961137D4118628B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5391E4C38B6687F7D12C297F1AC4B83 /* Pods-IntroScreen_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IntroScreen_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IntroScreen_Tests/Pods-IntroScreen_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D266701A2CFAD7E8E261A21AD2E31DDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F34678E4293451E20AF0D905112A3ED /* Pods-IntroScreen_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IntroScreen_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDB374E5CAF7AA5974BCF619F8EACED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697B532A50A1182A68F64AC7581FD759 /* IntroScreen.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IntroScreen/IntroScreen-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IntroScreen/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IntroScreen/IntroScreen.modulemap";
+				PRODUCT_MODULE_NAME = IntroScreen;
+				PRODUCT_NAME = IntroScreen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E19471FE7E209D0818DAFB22D649A6E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -571,7 +748,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -584,205 +761,14 @@
 			};
 			name = Debug;
 		};
-		58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		A02B99114DE06D95A325D181CB6AFF3E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD14EE63EC8703EE504FAC2786415227 /* IntroScreen.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IntroScreen/IntroScreen-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IntroScreen/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IntroScreen/IntroScreen.modulemap";
-				PRODUCT_MODULE_NAME = IntroScreen;
-				PRODUCT_NAME = IntroScreen;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BED3D8A12C8F6F9E810166BBA66C0E27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5391E4C38B6687F7D12C297F1AC4B83 /* Pods-IntroScreen_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IntroScreen_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IntroScreen_Tests/Pods-IntroScreen_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DC50C76A36246E711A06A1AA3600EFF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD14EE63EC8703EE504FAC2786415227 /* IntroScreen.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IntroScreen/IntroScreen-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IntroScreen/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IntroScreen/IntroScreen.modulemap";
-				PRODUCT_MODULE_NAME = IntroScreen;
-				PRODUCT_NAME = IntroScreen;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F8427B8F7B90EB63798186E614865CA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F34678E4293451E20AF0D905112A3ED /* Pods-IntroScreen_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-IntroScreen_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				50646285DD9FD95AF390BDA3FB1948EA /* Debug */,
-				58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */,
+				E19471FE7E209D0818DAFB22D649A6E9 /* Debug */,
+				8DFC9796FA9E6BCF680E1E0B1780DD0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -790,8 +776,8 @@
 		62B04D70C42CE9F242C4D4AE0C1A3310 /* Build configuration list for PBXNativeTarget "Pods-IntroScreen_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BED3D8A12C8F6F9E810166BBA66C0E27 /* Debug */,
-				1C275E9D4B38DDC590F0DBDD264DCA1B /* Release */,
+				BDCFCF62800BD333E961137D4118628B /* Debug */,
+				01A43166A5AC407F25F430984B857FC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -799,17 +785,17 @@
 		7C6237027865688372E37CA1CDC1AD81 /* Build configuration list for PBXNativeTarget "Pods-IntroScreen_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				40D65BED104C8F8FC705BCA12D75B120 /* Debug */,
-				F8427B8F7B90EB63798186E614865CA0 /* Release */,
+				81F04B28B0DB63217F1DDB62D5EA07E0 /* Debug */,
+				D266701A2CFAD7E8E261A21AD2E31DDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFF5F68E204DD55F57A1060066318CF4 /* Build configuration list for PBXNativeTarget "IntroScreen" */ = {
+		7E42D15C8E28B0C37D1A8F6CF560B9C4 /* Build configuration list for PBXNativeTarget "IntroScreen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A02B99114DE06D95A325D181CB6AFF3E /* Debug */,
-				DC50C76A36246E711A06A1AA3600EFF0 /* Release */,
+				6B1B15E58336050349D182AC7F99905B /* Debug */,
+				DDB374E5CAF7AA5974BCF619F8EACED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
