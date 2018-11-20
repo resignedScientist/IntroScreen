@@ -8,7 +8,7 @@ A beautiful intro screen for iOS written in Swift.
 
 ![](IntroScreen.gif)
 
-How to use:
+## How to use:
 
 1. Add a ViewController to your storyboard & set IntroViewController as the class.
 
@@ -65,8 +65,6 @@ Of course you can also use a custom view controller for the pages. Just extend I
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
