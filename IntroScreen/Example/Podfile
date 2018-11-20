@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'IntroScreen_Example' do
+  pod 'IntroScreen', :path => '../'
+
+  target 'IntroScreen_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

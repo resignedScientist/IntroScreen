@@ -1,0 +1,16 @@
+PODS:
+  - IntroScreen (0.1.0)
+
+DEPENDENCIES:
+  - IntroScreen (from `../`)
+
+EXTERNAL SOURCES:
+  IntroScreen:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IntroScreen: ad8a36c27d614bf344cf6ee33950aa6765bb9730
+
+PODFILE CHECKSUM: e56d9367874d8d97bfe3fb1cf7dce91311fdc708
+
+COCOAPODS: 1.5.3

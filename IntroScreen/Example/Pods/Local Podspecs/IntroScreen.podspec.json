@@ -1,0 +1,22 @@
+{
+  "name": "IntroScreen",
+  "version": "0.1.0",
+  "summary": "A short description of IntroScreen.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/P1xelfehler/IntroScreen",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "P1xelfehler": "norman.laudien1996@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/P1xelfehler/IntroScreen.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "IntroScreen/Classes/**/*"
+}
