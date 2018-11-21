@@ -188,35 +188,27 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     public func nextPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerAfter: currentVC) as? IntroPageViewController else { return }
-        self.currentVC = currentVC
-        targetVC = nextVC
-        startColor = currentVC.hue
-        targetColor = nextVC.hue
+        pageViewController(self, willTransitionTo: [nextVC])
         setViewControllers([nextVC], direction: .forward, animated: true) { (completed) in
             self.scrollView?.setContentOffset(self.scrollView!.contentOffset, animated: true)
-            self.targetColor = nil
+            self.pageViewController(self, didFinishAnimating: true, previousViewControllers: [currentVC], transitionCompleted: completed)
             if completed {
-                self.currentVC = self.targetVC
+                self.pageControl?.currentPage = nextVC.index
             }
         }
-        pageControl?.currentPage = nextVC.index
     }
     
     public func previousPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerBefore: currentVC) as? IntroPageViewController else { return }
-        self.currentVC = currentVC
-        targetVC = nextVC
-        startColor = currentVC.hue
-        targetColor = nextVC.hue
+        pageViewController(self, willTransitionTo: [nextVC])
         setViewControllers([nextVC], direction: .reverse, animated: true) { (completed) in
             self.scrollView?.setContentOffset(self.scrollView!.contentOffset, animated: true)
-            self.targetColor = nil
+            self.pageViewController(self, didFinishAnimating: true, previousViewControllers: [currentVC], transitionCompleted: completed)
             if completed {
-                self.currentVC = self.targetVC
+                self.pageControl?.currentPage = nextVC.index
             }
         }
-        pageControl?.currentPage = nextVC.index
     }
 }
 
