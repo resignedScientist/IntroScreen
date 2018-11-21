@@ -24,7 +24,7 @@ var numberOfPages: Int {
   return 3
 }
 
-// Return true, if you want to fade out the last page colour into black.
+// Return true, if you want to fade out the last page color into black.
 var fadeOutLastPage: Bool {
   return false
 }
@@ -63,9 +63,9 @@ func viewController(at index: Int) -> IntroPageViewController? {
 
 ### Customization
 
-Of course you can also use a custom view controller for the pages. Just extend IntroPageViewController. But you have to give it a clear background, so that the colours are visible.
+Of course you can also use a custom view controller for the pages. Just extend IntroPageViewController. But you have to give it a clear background, so that the colors are visible.
 
-The colours use the HSV color model. So, you just provide the hue in your Intro Pages.
+The colors use the HSV color model. So, you just provide the hue in your Intro Pages.
 You can change the saturation & brightness in the IntroViewController for all pages at the same time:
 
 ```swift
