@@ -24,6 +24,7 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
         }
         return nil
     }
+    private var scrollView: UIScrollView?
     
     required public init?(coder: NSCoder) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
@@ -40,6 +41,7 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
         for view in self.view.subviews {
             if let view = view as? UIScrollView {
                 view.delegate = self
+                scrollView = view
                 break
             }
         }
@@ -186,14 +188,34 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     public func nextPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerAfter: currentVC) as? IntroPageViewController else { return }
-        setViewControllers([nextVC], direction: .forward, animated: true)
+        self.currentVC = currentVC
+        targetVC = nextVC
+        startColor = currentVC.hue
+        targetColor = nextVC.hue
+        setViewControllers([nextVC], direction: .forward, animated: true) { (completed) in
+            self.scrollView?.setContentOffset(self.scrollView!.contentOffset, animated: true)
+            self.targetColor = nil
+            if completed {
+                self.currentVC = self.targetVC
+            }
+        }
         pageControl?.currentPage = nextVC.index
     }
     
     public func previousPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerBefore: currentVC) as? IntroPageViewController else { return }
-        setViewControllers([nextVC], direction: .reverse, animated: true)
+        self.currentVC = currentVC
+        targetVC = nextVC
+        startColor = currentVC.hue
+        targetColor = nextVC.hue
+        setViewControllers([nextVC], direction: .reverse, animated: true) { (completed) in
+            self.scrollView?.setContentOffset(self.scrollView!.contentOffset, animated: true)
+            self.targetColor = nil
+            if completed {
+                self.currentVC = self.targetVC
+            }
+        }
         pageControl?.currentPage = nextVC.index
     }
 }
