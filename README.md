@@ -1,6 +1,5 @@
 # IntroScreen
 
-[![CI Status](https://img.shields.io/travis/P1xelfehler/IntroScreen.svg?style=flat)](https://travis-ci.org/P1xelfehler/IntroScreen)
 [![Version](https://img.shields.io/cocoapods/v/IntroScreen.svg?style=flat)](https://cocoapods.org/pods/IntroScreen)
 [![License](https://img.shields.io/cocoapods/l/IntroScreen.svg?style=flat)](https://cocoapods.org/pods/IntroScreen)
 [![Platform](https://img.shields.io/cocoapods/p/IntroScreen.svg?style=flat)](https://cocoapods.org/pods/IntroScreen)
