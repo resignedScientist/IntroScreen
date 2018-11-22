@@ -1,6 +1,0 @@
-framework module IntroScreen {
-  umbrella header "IntroScreen-umbrella.h"
-
-  export *
-  module * { export * }
-}

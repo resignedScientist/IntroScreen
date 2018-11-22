@@ -1,8 +1,12 @@
 
 \.DS_Store
 
-IntroExample/IntroExample\.xcodeproj/project\.xcworkspace/xcuserdata/normanlaudien\.xcuserdatad/
+IntroScreen/Example/IntroScreen\.xcworkspace/xcuserdata/
 
-IntroScreen/Example/IntroScreen\.xcworkspace/xcuserdata/normanlaudien\.xcuserdatad/
+Example/IntroScreen\.xcworkspace/xcuserdata/
 
-Example/IntroScreen\.xcworkspace/xcuserdata/normanlaudien\.xcuserdatad/
+Example/Podfile\.lock
+
+Example/Pods/
+
+Example/build/
