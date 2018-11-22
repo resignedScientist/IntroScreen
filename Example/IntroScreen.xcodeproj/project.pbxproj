@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		17216DC63351DD7CA1384864 /* Pods_IntroScreen_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E331AAF955A295F23DA19503 /* Pods_IntroScreen_Tests.framework */; };
 		5EF9A24164F87FC55B9D9A5B /* Pods_IntroScreen_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12ABDDF1BAF6CFE6DA694D98 /* Pods_IntroScreen_Example.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D0ED1EAF21A40B6D009A2EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ED1EAA21A40B6D009A2EB3 /* Assets.xcassets */; };
 		D0ED1EB021A40B6D009A2EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EAB21A40B6D009A2EB3 /* AppDelegate.swift */; };
 		D0ED1EB521A40B7E009A2EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0ED1EB321A40B7E009A2EB3 /* LaunchScreen.storyboard */; };
@@ -35,8 +34,6 @@
 		607FACD01AFB9204008FA782 /* IntroScreen_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntroScreen_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* IntroScreen_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntroScreen_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		65C4EE52FF27B9F600CC900D /* IntroScreen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IntroScreen.podspec; path = ../IntroScreen.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C251E74972D04775489097BA /* Pods-IntroScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroScreen_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C3CD3250553300CC1507DCA4 /* Pods-IntroScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntroScreen_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,7 +80,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for IntroScreen */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				BBB13F338913D0AA800D2971 /* Pods */,
 				27397BA68A96493A96DF07C6 /* Frameworks */,
@@ -117,23 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -344,7 +323,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
