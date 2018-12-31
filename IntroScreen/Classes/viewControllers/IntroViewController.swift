@@ -53,6 +53,7 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
             return
         }
         if currentVC.index == introDataSource.numberOfPages - 1 {
+        if introDataSource.fadeOutLastPage && currentVC.index == introDataSource.numberOfPages - 1 {
             self.view.backgroundColor = UIColor.clear
         } else {
             self.view.backgroundColor = UIColor(hue: currentVC.hue, saturation: saturation, brightness: brightness, alpha: 1)
