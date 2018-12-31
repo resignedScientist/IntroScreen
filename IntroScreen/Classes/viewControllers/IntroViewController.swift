@@ -49,10 +49,11 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     
     override open func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        guard let introDataSource = introDataSource, let currentVC = currentVC else {
-            return
-        }
-        if currentVC.index == introDataSource.numberOfPages - 1 {
+        guard
+            let introDataSource = introDataSource,
+            let currentVC = currentVC
+            else { return }
+        
         if introDataSource.fadeOutLastPage && currentVC.index == introDataSource.numberOfPages - 1 {
             self.view.backgroundColor = UIColor.clear
         } else {
@@ -104,9 +105,11 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     // MARK: - Scroll view
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        guard let introDataSource = introDataSource, let startColor = self.startColor, let targetColor = self.targetColor else {
-            return
-        }
+        guard
+            let introDataSource = introDataSource,
+            let startColor = self.startColor,
+            let targetColor = self.targetColor
+            else { return }
         
         let numberOfPages = introDataSource.numberOfPages
         let offset = scrollView.contentOffset
@@ -166,16 +169,31 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
                 }
             }
         }
-        self.view.backgroundColor = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+        self.view.backgroundColor = UIColor(
+            hue: hue,
+            saturation: saturation,
+            brightness: brightness,
+            alpha: 1
+        )
     }
     
     func fadeOut(hue: CGFloat, scrolled: CGFloat) {
         let alpha = 1 - scrolled
-        self.view.backgroundColor = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: alpha)
+        self.view.backgroundColor = UIColor(
+            hue: hue,
+            saturation: saturation,
+            brightness: brightness,
+            alpha: alpha
+        )
     }
     
     func fadeIn(hue: CGFloat, scrolled: CGFloat) {
-        self.view.backgroundColor = UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: scrolled)
+        self.view.backgroundColor = UIColor(
+            hue: hue,
+            saturation: saturation,
+            brightness: brightness,
+            alpha: scrolled
+        )
     }
     
     func getScrolledPercentage(for pixels: CGFloat) -> CGFloat {
@@ -189,10 +207,16 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
     public func nextPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerAfter: currentVC) as? IntroPageViewController else { return }
+        
         pageViewController(self, willTransitionTo: [nextVC])
         setViewControllers([nextVC], direction: .forward, animated: true) { (completed) in
             self.scrollView?.setContentOffset(self.scrollView!.contentOffset, animated: true)
-            self.pageViewController(self, didFinishAnimating: true, previousViewControllers: [currentVC], transitionCompleted: completed)
+            self.pageViewController(
+                self,
+                didFinishAnimating: true,
+                previousViewControllers: [currentVC],
+                transitionCompleted: completed
+            )
             if completed {
                 self.pageControl?.currentPage = nextVC.index
             }
@@ -205,7 +229,12 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
         pageViewController(self, willTransitionTo: [nextVC])
         setViewControllers([nextVC], direction: .reverse, animated: true) { (completed) in
             self.scrollView?.setContentOffset(self.scrollView!.contentOffset, animated: true)
-            self.pageViewController(self, didFinishAnimating: true, previousViewControllers: [currentVC], transitionCompleted: completed)
+            self.pageViewController(
+                self,
+                didFinishAnimating: true,
+                previousViewControllers: [currentVC],
+                transitionCompleted: completed
+            )
             if completed {
                 self.pageControl?.currentPage = nextVC.index
             }
