@@ -94,7 +94,7 @@ pod 'IntroScreen'
 
 ## Author
 
-P1xelfehler, norman.laudien1996@gmail.com
+P1xelfehler, kontakt@norman-laudien.de
 
 ## License
 
