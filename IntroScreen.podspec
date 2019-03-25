@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IntroScreen'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'A beautiful intro screen for iOS written in Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ This pod is an Intro Screen for iOS for discribing beautifully what the app you 
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.source_files = 'IntroScreen/Classes/**/*'
   
