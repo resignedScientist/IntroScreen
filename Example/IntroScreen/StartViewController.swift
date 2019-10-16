@@ -19,6 +19,7 @@ class StartViewController: UIViewController {
         switch segue.identifier {
         case "introSegue":
             let destination = segue.destination as! IntroViewController
+            destination.modalPresentationStyle = .fullScreen
             destination.introDataSource = self
         default:
             break

@@ -193,21 +193,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/IntroScreen/IntroScreen.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IntroScreen.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A45A6465B3A6F27B4D816922 /* [CP] Check Pods Manifest.lock */ = {
@@ -362,6 +358,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6J6V466332;
 				INFOPLIST_FILE = IntroScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -380,6 +377,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 6J6V466332;
 				INFOPLIST_FILE = IntroScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
