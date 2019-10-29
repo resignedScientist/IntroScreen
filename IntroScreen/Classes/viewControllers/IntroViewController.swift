@@ -37,6 +37,11 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
         if let startViewController = introDataSource?.viewController(at: 0) {
             setViewControllers([startViewController], direction: .forward, animated: true, completion: nil)
             currentVC = startViewController
+            self.view.backgroundColor = UIColor(
+                hue: startViewController.hue,
+                saturation: saturation,
+                brightness: brightness, alpha: 1
+            )
         }
         for view in self.view.subviews {
             if let view = view as? UIScrollView {
@@ -57,7 +62,12 @@ open class IntroViewController: UIPageViewController, UIPageViewControllerDelega
         if introDataSource.fadeOutLastPage && currentVC.index == introDataSource.numberOfPages - 1 {
             self.view.backgroundColor = UIColor.clear
         } else {
-            self.view.backgroundColor = UIColor(hue: currentVC.hue, saturation: saturation, brightness: brightness, alpha: 1)
+            self.view.backgroundColor = UIColor(
+                hue: currentVC.hue,
+                saturation: saturation,
+                brightness: brightness,
+                alpha: 1
+            )
         }
     }
     
