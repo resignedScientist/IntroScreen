@@ -87,7 +87,7 @@ extension IntroViewController {
 
 extension IntroViewController {
     
-    func changeColor(from startHue: CGFloat,
+    private func changeColor(from startHue: CGFloat,
                      to targetHue: CGFloat,
                      scrolled: CGFloat) {
         let diff = targetHue - startHue
@@ -122,7 +122,7 @@ extension IntroViewController {
         )
     }
     
-    func fadeOut(hue: CGFloat, scrolled: CGFloat) {
+    private func fadeOut(hue: CGFloat, scrolled: CGFloat) {
         let alpha = 1 - scrolled
         self.view.backgroundColor = UIColor(
             hue: hue,
@@ -132,7 +132,7 @@ extension IntroViewController {
         )
     }
     
-    func fadeIn(hue: CGFloat, scrolled: CGFloat) {
+    private func fadeIn(hue: CGFloat, scrolled: CGFloat) {
         self.view.backgroundColor = UIColor(
             hue: hue,
             saturation: saturation,
@@ -141,7 +141,7 @@ extension IntroViewController {
         )
     }
     
-    func getScrolledPercentage(for pixels: CGFloat) -> CGFloat {
+    private func getScrolledPercentage(for pixels: CGFloat) -> CGFloat {
         let width = view.frame.width
         let progressPixels = pixels - width
         return abs(progressPixels / width)
@@ -152,6 +152,7 @@ extension IntroViewController {
 
 extension IntroViewController {
     
+    /// Move to the next page.
     public func nextPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerAfter: currentVC) as? IntroPageViewController else { return }
@@ -171,6 +172,7 @@ extension IntroViewController {
         }
     }
     
+    /// Move to the previous page.
     public func previousPage() {
         guard let currentVC = currentVC else { return }
         guard let nextVC = pageViewController(self, viewControllerBefore: currentVC) as? IntroPageViewController else { return }
@@ -201,7 +203,10 @@ extension IntroViewController: UIPageViewControllerDelegate {
         targetColor = targetVC?.hue
     }
     
-    public func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    public func pageViewController(_ pageViewController: UIPageViewController,
+                                   didFinishAnimating finished: Bool,
+                                   previousViewControllers: [UIViewController],
+                                   transitionCompleted completed: Bool) {
         targetColor = nil
         if completed {
             currentVC = targetVC
@@ -212,6 +217,7 @@ extension IntroViewController: UIPageViewControllerDelegate {
 // MARK: - UIPageViewControllerDataSource
 
 extension IntroViewController: UIPageViewControllerDataSource {
+    
     public func pageViewController(_ pageViewController: UIPageViewController,
                                    viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let currentVC = viewController as? IntroPageViewController else { return nil }

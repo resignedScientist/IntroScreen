@@ -17,6 +17,14 @@ public class DefaultIntroPageViewController: IntroPageViewController {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var subtitleLabel: UILabel!
     
+    /// Returns a configured instance of the IntroPageViewController.
+    /// - Parameters:
+    ///   - index: The page index of this intro page.
+    ///   - hue: The color hue between 0 & 1 for the HSV color.
+    ///   - title: The page title.
+    ///   - subtitle: The page subtitle.
+    ///   - image: The page image.
+    ///   - textColor: The text label color. Default is black.
     public static func getInstance(
         index: Int,
         hue: CGFloat,
