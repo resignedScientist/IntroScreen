@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h7y-vS-cY7">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Default Intro Page View Controller-->
+        <scene sceneID="WOX-qD-Stm">
+            <objects>
+                <viewController storyboardIdentifier="DefaultIntroPageVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h7y-vS-cY7" customClass="DefaultIntroPageViewController" customModule="IntroScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ek4-c5-RXK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0b-cL-DSu">
+                                <rect key="frame" x="16" y="36" width="288" height="354"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="03p-ew-PCK">
+                                        <variation key="heightClass=compact" constant="280"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="03p-ew-PCK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="03p-ew-PCK"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pcx-sN-q3e">
+                                <rect key="frame" x="16" y="454" width="288" height="84"/>
+                                <string key="text">This is a very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very very long Subtitle</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xLC-x0-F2S">
+                                <rect key="frame" x="16" y="422" width="288" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="leading" secondItem="EsY-NS-tgw" secondAttribute="leading" constant="16" id="19U-M1-sHb"/>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="leading" secondItem="EsY-NS-tgw" secondAttribute="leading" constant="16" id="4pO-pY-mLL"/>
+                            <constraint firstItem="EsY-NS-tgw" firstAttribute="trailing" secondItem="c0b-cL-DSu" secondAttribute="trailing" constant="16" id="81m-HG-fCe"/>
+                            <constraint firstItem="Pcx-sN-q3e" firstAttribute="top" secondItem="xLC-x0-F2S" secondAttribute="bottom" constant="8" id="F8f-Ab-NJ3"/>
+                            <constraint firstItem="c0b-cL-DSu" firstAttribute="top" secondItem="EsY-NS-tgw" secondAttribute="top" constant="16" id="Gba-sO-6Po"/>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="centerY" secondItem="ek4-c5-RXK" secondAttribute="centerY" constant="150" id="HNM-8E-SlU">
+                                <variation key="heightClass=compact" constant="-40"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="250"/>
+                            </constraint>
+                            <constraint firstItem="EsY-NS-tgw" firstAttribute="trailing" secondItem="c0b-cL-DSu" secondAttribute="trailing" constant="16" id="VRF-dU-0fo"/>
+                            <constraint firstItem="Pcx-sN-q3e" firstAttribute="leading" secondItem="xLC-x0-F2S" secondAttribute="leading" id="XHK-e4-qMr"/>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="top" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="16" id="b7V-Jx-PHt"/>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="trailing" secondItem="Pcx-sN-q3e" secondAttribute="trailing" id="e7x-8d-hld"/>
+                            <constraint firstItem="EsY-NS-tgw" firstAttribute="bottom" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="16" id="eRG-Xt-YQ0"/>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="top" secondItem="c0b-cL-DSu" secondAttribute="bottom" constant="32" id="jzB-S7-Kov">
+                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                            </constraint>
+                            <constraint firstItem="EsY-NS-tgw" firstAttribute="trailing" secondItem="xLC-x0-F2S" secondAttribute="trailing" constant="16" id="t65-YI-vtk"/>
+                            <constraint firstItem="c0b-cL-DSu" firstAttribute="leading" secondItem="EsY-NS-tgw" secondAttribute="leading" constant="16" id="wK2-ca-YPD"/>
+                            <constraint firstItem="xLC-x0-F2S" firstAttribute="leading" secondItem="c0b-cL-DSu" secondAttribute="trailing" constant="313.5" id="y2I-ho-CAq">
+                                <variation key="heightClass=compact" constant="16"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EsY-NS-tgw"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="81m-HG-fCe"/>
+                                <exclude reference="eRG-Xt-YQ0"/>
+                                <exclude reference="19U-M1-sHb"/>
+                                <exclude reference="b7V-Jx-PHt"/>
+                                <exclude reference="y2I-ho-CAq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="VRF-dU-0fo"/>
+                                <include reference="eRG-Xt-YQ0"/>
+                                <exclude reference="4pO-pY-mLL"/>
+                                <exclude reference="jzB-S7-Kov"/>
+                                <include reference="y2I-ho-CAq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="HNM-8E-SlU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="c0b-cL-DSu" id="szZ-Ir-CVj"/>
+                        <outlet property="subtitleLabel" destination="Pcx-sN-q3e" id="ZRj-zA-0KL"/>
+                        <outlet property="titleLabel" destination="xLC-x0-F2S" id="TiQ-WZ-BQF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMK-ta-FIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2231.3343328335832" y="1444"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="Tint"/>
+</document>

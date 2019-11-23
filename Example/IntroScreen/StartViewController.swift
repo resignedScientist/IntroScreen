@@ -27,14 +27,13 @@ class StartViewController: UIViewController {
     }
 }
 
+// MARK: - Intro data source
+
 extension StartViewController: IntroDataSource {
-    var numberOfPages: Int {
-        return 3
-    }
     
-    var fadeOutLastPage: Bool {
-        return false
-    }
+    var numberOfPages: Int { 3 }
+    
+    var fadeOutLastPage: Bool { false }
     
     func viewController(at index: Int) -> IntroPageViewController? {
         switch index {

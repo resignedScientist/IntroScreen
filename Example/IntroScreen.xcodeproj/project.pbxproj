@@ -77,11 +77,11 @@
 		607FACD21AFB9204008FA782 /* Example for IntroScreen */ = {
 			isa = PBXGroup;
 			children = (
-				D0ED1EB721A40B8B009A2EB3 /* StartViewController.swift */,
 				D0ED1EAB21A40B6D009A2EB3 /* AppDelegate.swift */,
 				D0ED1EAA21A40B6D009A2EB3 /* Assets.xcassets */,
 				D0ED1EB321A40B7E009A2EB3 /* LaunchScreen.storyboard */,
 				D0ED1EB421A40B7E009A2EB3 /* Main.storyboard */,
+				D0ED1EB721A40B8B009A2EB3 /* StartViewController.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for IntroScreen";
