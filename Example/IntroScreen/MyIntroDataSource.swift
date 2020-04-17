@@ -9,31 +9,13 @@
 import UIKit
 import IntroScreen
 
-class StartViewController: UIViewController {
-    
-    @IBAction func startIntroTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "introSegue", sender: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        switch segue.identifier {
-        case "introSegue":
-            let destination = segue.destination as! IntroViewController
-            destination.modalPresentationStyle = .fullScreen
-            destination.introDataSource = self
-        default:
-            break
-        }
-    }
-}
-
 // MARK: - Intro data source
 
-extension StartViewController: IntroDataSource {
+class MyIntroDataSource: IntroDataSource {
     
-    var numberOfPages: Int { 3 }
+    let numberOfPages = 3
     
-    var fadeOutLastPage: Bool { false }
+    let fadeOutLastPage: Bool = false
     
     func viewController(at index: Int) -> IntroPageViewController? {
         switch index {

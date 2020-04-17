@@ -9,13 +9,26 @@
 import UIKit
 
 open class IntroViewController: UIPageViewController {
-    public var introDataSource: IntroDataSource!
-    public var saturation: CGFloat = 0.85
-    public var brightness: CGFloat = 0.9
+    
+    private let introDataSource: IntroDataSource
+    private let saturation: CGFloat
+    private let brightness: CGFloat
+    
     private var startColor: CGFloat?
     private var targetColor: CGFloat?
     private var currentVC: IntroPageViewController?
     private var targetVC: IntroPageViewController?
+    
+    public init(dataSource: IntroDataSource, saturation: CGFloat = 0.85, brightness: CGFloat = 0.9) {
+        self.introDataSource = dataSource
+        self.saturation = saturation
+        self.brightness = brightness
+        
+        super.init(
+            transitionStyle: .scroll,
+            navigationOrientation: .horizontal
+        )
+    }
     
     private lazy var pageControl: UIPageControl? = {
         for view in view.subviews {
@@ -36,7 +49,7 @@ open class IntroViewController: UIPageViewController {
     }()
     
     required public init?(coder: NSCoder) {
-        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
+        fatalError("Initializing with coder is not supported.")
     }
 }
 
@@ -46,10 +59,6 @@ extension IntroViewController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
-        
-        guard let introDataSource = introDataSource else {
-            fatalError("You need to provide an intro data source before viewDidLoad() has been called.")
-        }
         
         dataSource = self
         delegate = self
