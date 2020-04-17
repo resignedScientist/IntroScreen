@@ -56,7 +56,7 @@ extension DefaultIntroPageViewController {
         let safeArea = view.safeAreaLayoutGuide
         
         constraints = [
-            imageView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 100),
+            imageView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: view.frame.width / 15),
             imageView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
             imageView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -32),
             imageView.widthAnchor.constraint(equalToConstant: 300),
