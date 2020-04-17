@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class IntroViewController: UIPageViewController {
+public class IntroViewController: UIPageViewController {
     
     let introDataSource: IntroDataSource
     let saturation: CGFloat
