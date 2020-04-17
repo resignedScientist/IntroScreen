@@ -62,7 +62,7 @@ That's it! 😎
 
 ### Customization
 
-Of course you can also use a custom view controller for the pages. Just extend IntroPageViewController or use a `UIViewController` that implements `IntroPage`. Keep in mind that you have to give it a clear background, so that the colors are visible.
+Of course you can also use a custom view controller for the pages. Just extend `IntroPageViewController` or use a `UIViewController` that implements `IntroPage`. Keep in mind that you have to give it a clear background, so that the colors are visible.
 
 The colors use the HSV color model. So, you just provide the hue in your Intro Pages:
 
