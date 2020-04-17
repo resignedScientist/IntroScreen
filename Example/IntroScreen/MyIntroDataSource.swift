@@ -9,9 +9,7 @@
 import UIKit
 import IntroScreen
 
-// MARK: - Intro data source
-
-class MyIntroDataSource: IntroDataSource {
+struct MyIntroDataSource: IntroDataSource {
     
     let numberOfPages = 3
     
