@@ -9,15 +9,15 @@
 import UIKit
 
 public class DefaultIntroPageViewController: IntroPageViewController {
-    public let index: Int
     
+    public let index: Int
     public let hue: CGFloat
     
-    private var subtitle: String
-    private var image: UIImage
-    private var textColor: UIColor
+    var subtitle: String
+    var image: UIImage
+    var textColor: UIColor
     
-    private lazy var imageView: UIImageView = {
+    lazy var imageView: UIImageView = {
         let imageView = UIImageView(image: image)
         imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +25,7 @@ public class DefaultIntroPageViewController: IntroPageViewController {
         return imageView
     }()
     
-    private lazy var titleLabel: UILabel = {
+    lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
         titleLabel.text = title
         titleLabel.textColor = textColor
@@ -36,7 +36,7 @@ public class DefaultIntroPageViewController: IntroPageViewController {
         return titleLabel
     }()
     
-    private lazy var subtitleLabel: UILabel = {
+    lazy var subtitleLabel: UILabel = {
         let subtitleLabel = UILabel()
         subtitleLabel.text = subtitle
         subtitleLabel.textColor = textColor
@@ -78,30 +78,5 @@ public class DefaultIntroPageViewController: IntroPageViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func addViews() {
-        view.addSubview(imageView)
-        view.addSubview(titleLabel)
-        view.addSubview(subtitleLabel)
-    }
-    
-    private func layout() {
-        let safeArea = view.safeAreaLayoutGuide
-        
-        NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
-            imageView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
-            imageView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
-            imageView.bottomAnchor.constraint(equalTo: titleLabel.topAnchor, constant: -32),
-            
-            titleLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
-            titleLabel.centerYAnchor.constraint(equalTo: safeArea.centerYAnchor, constant: 150),
-            titleLabel.bottomAnchor.constraint(equalTo: subtitleLabel.topAnchor, constant: -8),
-            
-            subtitleLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
-            subtitleLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16)
-        ])
     }
 }
