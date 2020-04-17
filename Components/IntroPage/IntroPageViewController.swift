@@ -6,13 +6,13 @@
 //  Copyright © 2018 Norman Laudien. All rights reserved.
 //
 
-import UIKit
+public typealias IntroPageViewController = UIViewController & IntroPage
 
-open class IntroPageViewController: UIViewController {
+public protocol IntroPage: AnyObject {
     
     /// The page index of this intro page.
-    public var index: Int = 0
+    var index: Int { get }
     
     /// The color hue between 0 & 1 for the HSV color.
-    public var hue: CGFloat = 0
+    var hue: CGFloat { get }
 }

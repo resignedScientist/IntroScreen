@@ -18,28 +18,28 @@ struct MyIntroDataSource: IntroDataSource {
     func viewController(at index: Int) -> IntroPageViewController? {
         switch index {
         case 0:
-            return DefaultIntroPageViewController.getInstance(
+            return DefaultIntroPageViewController(
                 index: index,
                 hue: 30/360,
                 title: "First page",
                 subtitle: "This is the first page.",
-                image: UIImage(named: "first")
+                image: UIImage(named: "first")!
             )
         case 1:
-            return DefaultIntroPageViewController.getInstance(
+            return DefaultIntroPageViewController(
                 index: index,
                 hue: 60/360,
                 title: "Second page",
                 subtitle: "This is the second page.",
-                image: UIImage(named: "second")
+                image: UIImage(named: "second")!
             )
         case 2:
-            return DefaultIntroPageViewController.getInstance(
+            return DefaultIntroPageViewController(
                 index: index,
                 hue: 90/360,
                 title: "Third page",
                 subtitle: "This is the third page.",
-                image: UIImage(named: "third")
+                image: UIImage(named: "third")!
             )
         default:
             return nil
