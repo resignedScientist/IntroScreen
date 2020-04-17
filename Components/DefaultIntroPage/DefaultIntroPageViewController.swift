@@ -16,6 +16,7 @@ public class DefaultIntroPageViewController: IntroPageViewController {
     var subtitle: String
     var image: UIImage
     var textColor: UIColor
+    var constraints = [NSLayoutConstraint]()
     
     lazy var imageView: UIImageView = {
         let imageView = UIImageView(image: image)

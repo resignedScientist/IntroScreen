@@ -7,6 +7,13 @@
 
 extension DefaultIntroPageViewController {
     
+    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if previousTraitCollection?.verticalSizeClass != traitCollection.verticalSizeClass {
+            NSLayoutConstraint.deactivate(constraints)
+            layout()
+        }
+    }
+    
     func addViews() {
         view.addSubview(imageView)
         view.addSubview(titleLabel)
@@ -14,9 +21,20 @@ extension DefaultIntroPageViewController {
     }
     
     func layout() {
+        switch traitCollection.verticalSizeClass {
+        case .compact:
+            layoutForSmallHeight()
+        case .regular, .unspecified:
+            layoutForLargeHeight()
+        @unknown default:
+            layoutForLargeHeight()
+        }
+    }
+    
+    private func layoutForLargeHeight() {
         let safeArea = view.safeAreaLayoutGuide
         
-        NSLayoutConstraint.activate([
+        constraints = [
             imageView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
             imageView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
             imageView.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16),
@@ -29,6 +47,29 @@ extension DefaultIntroPageViewController {
             
             subtitleLabel.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 16),
             subtitleLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: -16)
-        ])
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func layoutForSmallHeight() {
+        let safeArea = view.safeAreaLayoutGuide
+        
+        constraints = [
+            imageView.leadingAnchor.constraint(equalTo: safeArea.leadingAnchor, constant: 100),
+            imageView.topAnchor.constraint(equalTo: safeArea.topAnchor, constant: 16),
+            imageView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: -32),
+            imageView.widthAnchor.constraint(equalToConstant: 300),
+            
+            titleLabel.leadingAnchor.constraint(equalTo: imageView.trailingAnchor, constant: -16),
+            titleLabel.trailingAnchor.constraint(equalTo: safeArea.trailingAnchor, constant: 16),
+            titleLabel.centerYAnchor.constraint(equalTo: safeArea.centerYAnchor),
+            
+            subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor),
+            subtitleLabel.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
+            subtitleLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor)
+        ]
+        
+        NSLayoutConstraint.activate(constraints)
     }
 }
