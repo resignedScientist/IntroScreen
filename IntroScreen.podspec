@@ -31,7 +31,7 @@ This pod is an Intro Screen for iOS for discribing beautifully what the app you 
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'IntroScreen/Classes/**/*'
+  s.source_files = 'IntroScreen/**/*'
   
   # s.resource_bundles = {
   #   'IntroScreen' => ['IntroScreen/Assets/*.png']
