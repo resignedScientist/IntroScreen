@@ -11,8 +11,7 @@
 		D0ED1EAF21A40B6D009A2EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ED1EAA21A40B6D009A2EB3 /* Assets.xcassets */; };
 		D0ED1EB021A40B6D009A2EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EAB21A40B6D009A2EB3 /* AppDelegate.swift */; };
 		D0ED1EB521A40B7E009A2EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0ED1EB321A40B7E009A2EB3 /* LaunchScreen.storyboard */; };
-		D0ED1EB621A40B7E009A2EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0ED1EB421A40B7E009A2EB3 /* Main.storyboard */; };
-		D0ED1EB821A40B8B009A2EB3 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EB721A40B8B009A2EB3 /* StartViewController.swift */; };
+		D0ED1EB821A40B8B009A2EB3 /* MyIntroDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ED1EB721A40B8B009A2EB3 /* MyIntroDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +28,7 @@
 		D0ED1EAA21A40B6D009A2EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0ED1EAB21A40B6D009A2EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0ED1EB321A40B7E009A2EB3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D0ED1EB421A40B7E009A2EB3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D0ED1EB721A40B8B009A2EB3 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		D0ED1EB721A40B8B009A2EB3 /* MyIntroDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIntroDataSource.swift; sourceTree = "<group>"; };
 		E331AAF955A295F23DA19503 /* Pods_IntroScreen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntroScreen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,8 +78,7 @@
 				D0ED1EAB21A40B6D009A2EB3 /* AppDelegate.swift */,
 				D0ED1EAA21A40B6D009A2EB3 /* Assets.xcassets */,
 				D0ED1EB321A40B7E009A2EB3 /* LaunchScreen.storyboard */,
-				D0ED1EB421A40B7E009A2EB3 /* Main.storyboard */,
-				D0ED1EB721A40B8B009A2EB3 /* StartViewController.swift */,
+				D0ED1EB721A40B8B009A2EB3 /* MyIntroDataSource.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for IntroScreen";
@@ -128,7 +125,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				1465C43A28516AD04050B40C /* [CP] Embed Pods Frameworks */,
+				D841439EC137C44912E195DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,7 +177,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ED1EAF21A40B6D009A2EB3 /* Assets.xcassets in Resources */,
-				D0ED1EB621A40B7E009A2EB3 /* Main.storyboard in Resources */,
 				D0ED1EB521A40B7E009A2EB3 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,24 +184,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1465C43A28516AD04050B40C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IntroScreen/IntroScreen.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IntroScreen.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A45A6465B3A6F27B4D816922 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -228,6 +206,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D841439EC137C44912E195DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IntroScreen/IntroScreen.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IntroScreen.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntroScreen_Example/Pods-IntroScreen_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -236,7 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0ED1EB021A40B6D009A2EB3 /* AppDelegate.swift in Sources */,
-				D0ED1EB821A40B8B009A2EB3 /* StartViewController.swift in Sources */,
+				D0ED1EB821A40B8B009A2EB3 /* MyIntroDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
